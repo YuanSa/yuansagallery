@@ -103,4 +103,35 @@ header {
         }
     }
 }
+
+@media screen and (orientation: portrait) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em 0;
+        border-style: none;
+
+        nav {
+            width: 100%;
+            padding: 0 0.6em;
+            font-size: 0.8em;
+            background-color: #f4f4f4;
+
+            * {
+                padding: 0.2em 0.6em;
+
+                &:hover {
+                    border-bottom: none;
+                }
+            }
+
+            .selected {
+                font-weight: bold;
+                color: white;
+                background-color: $themeColor;
+                border: none;
+            }
+        }
+    }
+}
 </style>

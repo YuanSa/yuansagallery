@@ -71,4 +71,41 @@ footer {
         flex-direction: column;
     }
 }
+
+@media screen and (orientation: portrait) {
+    footer {
+        display: grid;
+        gap: 0.4em;
+        padding: 1rem;
+        color: white;
+        font-weight: lighter;
+        font-size: 0.75em;
+        background-color: black;
+
+        a {
+            padding: 0 0.3em;
+            color: inherit;
+            text-decoration: none;
+            border: dotted thin transparent;
+
+            &:hover {
+                border-color: inherit;
+            }
+        }
+
+        .links {
+            grid-area: 1/1 / 2/2;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .contacts {
+            display: none;
+        }
+        .records {
+            grid-area: 2/1 / 3/2;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
 </style>

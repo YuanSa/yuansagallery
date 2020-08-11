@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="two-col" id="sec1">
-            <img src="img/art/man-forest-double-exposure.jpg" alt="" />
+            <img src="img/art/man-forest-double-exposure.jpg" alt="" style="left: -35%" />
             <div>
                 <h1>让<span class="focus">Photoshop</span>更简单</h1>
                 <p>一共 10 期视频</p>
@@ -45,10 +45,10 @@
                     >
                 </div>
             </div>
-            <img src="img/art/griffin.png" alt="" />
+            <img src="img/art/griffin.png" alt="" style="left: 5%; bottom: 5%" />
         </div>
         <div class="two-col" id="sec3">
-            <img src="img/art/rhino.png" alt="" />
+            <img src="img/art/rhino.png" alt="" style="left: -58%" />
             <div>
                 <h1>让<span class="focus">网页设计</span>更通俗</h1>
                 <p>简明入门前端基本功：HTML5、CSS3</p>
@@ -106,7 +106,7 @@ export default {
 
     h1 {
         margin: 0;
-        font-size: 4em;
+        font-size: 3em;
     }
     h2 {
         margin: 0;
@@ -120,5 +120,34 @@ export default {
 
 .two-col {
     margin: 10em 0;
+}
+
+@media screen and (orientation: portrait) {
+    .two-col {
+        margin: 4em 0;
+        width: 100vw;
+        overflow-x: hidden;
+
+        > *:first-child,
+        > *:last-child {
+            justify-self: start;
+            text-align: left;
+        }
+        > div {
+            margin: 10em 0;
+            padding: 0.5em;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+
+            p {
+                text-align: left;
+            }
+        }
+        img {
+            height: 100%;
+            max-width: none;
+            position: relative;
+        }
+    }
 }
 </style>
