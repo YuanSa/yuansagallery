@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <Header section="home" />
+        <Header :section="$store.state.section" />
         <router-view />
         <Footer />
     </div>

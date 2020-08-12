@@ -31,7 +31,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style scoped lang="scss" scoped>
 footer {
     display: grid;
     grid-template: 1fr auto / 1fr auto;

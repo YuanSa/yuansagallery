@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "name": "bestbp",
+            "title": "英雄联盟BP推荐",
+            "summary": ["大数据训练模型，为你推荐下一组BP的最佳选择"],
+            "picture": "bestbp.webp"
+        },
+        {
+            "name": "chengyujielong",
+            "title": "成语接龙",
+            "summary": ["经典的成语接龙游戏。不来看看你能得多少分？"],
+            "picture": "chengyujielong.jpg"
+        },
+        {
+            "name": "colorpuzzle",
+            "title": "Color Puzzle",
+            "summary": ["风靡全球的色彩解谜小游戏。把凌乱的色块还原成连续的渐变。"],
+            "picture": ""
+        },
+        {
+            "name": "jiang",
+            "title": "绛色回忆",
+            "summary": ["记录我们的相爱历程"],
+            "picture": ""
+        },
+        {
+            "name": "ltl",
+            "title": "反抗，不遗忘",
+            "summary": ["反抗所有的不公与邪恶"],
+            "picture": ""
+        },
+        {
+            "name": "music",
+            "title": "Music Now!",
+            "summary": ["听音乐，就要动起来！"],
+            "picture": ""
+        }
+    ]
+}

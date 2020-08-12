@@ -92,6 +92,9 @@
 <script>
 export default {
     name: "Index",
+    created() {
+        this.$store.dispatch("navigateTo", "home");
+    },
 };
 </script>
 
@@ -113,19 +116,20 @@ export default {
         font-size: 1.5em;
     }
 }
-
 .button-group {
+    max-width: 100vw;
     margin-top: 2em;
 }
 
 .two-col {
+    max-width: 100vw;
     margin: 10em 0;
 }
 
 @media screen and (orientation: portrait) {
     .two-col {
         margin: 4em 0;
-        width: 100vw;
+        width: 100%;
         overflow-x: hidden;
 
         > *:first-child,
@@ -136,11 +140,12 @@ export default {
         > div {
             margin: 10em 0;
             padding: 0.5em;
+            max-width: 100vw;
             z-index: 1;
             background-color: rgba(255, 255, 255, 0.8);
 
             p {
-                text-align: left;
+                text-align: justify;
             }
         }
         img {

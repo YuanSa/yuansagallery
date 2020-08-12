@@ -10,7 +10,10 @@
         </div>
         <nav>
             <router-link to="/" :class="{ selected: section == 'home' }">首页</router-link>
-            <div style="cursor: not-allowed;">更多板块建设中</div>
+            <router-link to="/lab" :class="{ selected: section == 'lab' }">实验室</router-link>
+            <!-- <div style="cursor: not-allowed; color: #aaa; font-weight: lighter;">
+                更多板块建设中
+            </div> -->
         </nav>
     </header>
 </template>
@@ -25,7 +28,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style scoped lang="scss" scoped>
 $themeColor: hsl(309, 70%, 47%);
 $backgroundColor: white;
 
@@ -115,10 +118,13 @@ header {
             width: 100%;
             padding: 0 0.6em;
             font-size: 0.8em;
-            background-color: #f4f4f4;
+            background-color: transparent;
 
             * {
+                margin: 0 0.5em;
                 padding: 0.2em 0.6em;
+                background-color: #eee;
+                border-radius: 1.5em;
 
                 &:hover {
                     border-bottom: none;
